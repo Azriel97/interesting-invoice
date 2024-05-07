@@ -1,0 +1,11 @@
+server:
+  port: 57976
+spring:
+  application:
+    name: interesting-invoice
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: ${OREILLYPOS:jdbc:postgresql://localhost:5432/postgres}
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:}
+    type: com.zaxxer.hikari.HikariDataSource
